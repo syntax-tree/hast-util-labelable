@@ -37,9 +37,9 @@ labelable({
 ###### Returns
 
 `boolean` — Whether `node` is a labelable element.
-Labelable nodes have a `tagName` set include `button`, `keygen`,
+Labelable nodes have a `tagName` set to `button`, `keygen`,
 `meter`, `output`, `progress`, `select`, `textarea`, and `input`
-(when not `[type=hidden]`.
+(excluding `[type=hidden]`.
 
 ## License
 
