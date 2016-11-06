@@ -10,9 +10,6 @@ Check whether a [HAST node][hast] is [labelable][spec].
 npm install hast-util-labelable
 ```
 
-**hast-util-labelable** is also available as an AMD, CommonJS, and globals
-module, [uncompressed and compressed][releases].
-
 ## Usage
 
 ```javascript
@@ -33,11 +30,11 @@ labelable({
 
 ### `labelable(node)`
 
-**Parameters**:
+###### Parameters
 
 *   `node` ([`Node`][node], optional) — Node to check.
 
-**Returns**:
+###### Returns
 
 `boolean` — Whether `node` is a labelable element.
 Labelable nodes have a `tagName` set include `button`, `keygen`,
@@ -59,8 +56,6 @@ Labelable nodes have a `tagName` set include `button`, `keygen`,
 [coverage-page]: https://codecov.io/github/wooorm/hast-util-labelable?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-labelable/releases
 
 [license]: LICENSE
 
