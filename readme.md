@@ -15,33 +15,18 @@ module, [uncompressed and compressed][releases].
 
 ## Usage
 
-Dependencies:
-
 ```javascript
 var labelable = require('hast-util-labelable');
-var a = labelable({
-    'type': 'element',
-    'tagName': 'div'
-});
-var b = labelable({
-    'type': 'element',
-    'tagName': 'input'
-});
-var c = labelable({
-    'type': 'element',
-    'tagName': 'input',
-    'properties': {
-        'type': 'hidden'
-    }
-});
-```
 
-Yields:
+labelable({type: 'element', tagName: 'div'}); //=> false
 
-```txt
-a: false
-b: true
-c: false
+labelable({type: 'element', tagName: 'input'}); //=> true
+
+labelable({
+  type: 'element',
+  tagName: 'input',
+  properties: {type: 'hidden'}
+}); //=> false
 ```
 
 ## API
