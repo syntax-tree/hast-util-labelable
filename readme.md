@@ -47,13 +47,13 @@ Labelable nodes have a `tagName` set to `button`, `keygen`,
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/hast-util-labelable.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-labelable.svg
 
-[build-page]: https://travis-ci.org/wooorm/hast-util-labelable
+[build-page]: https://travis-ci.org/syntax-tree/hast-util-labelable
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/hast-util-labelable.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-labelable.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/hast-util-labelable?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-labelable?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -61,8 +61,8 @@ Labelable nodes have a `tagName` set to `button`, `keygen`,
 
 [author]: http://wooorm.com
 
-[hast]: https://github.com/wooorm/hast
+[hast]: https://github.com/syntax-tree/hast
 
 [spec]: https://html.spec.whatwg.org/#category-label
 
-[node]: https://github.com/wooorm/hast#node
+[node]: https://github.com/syntax-tree/unist#node
