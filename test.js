@@ -1,10 +1,8 @@
 'use strict';
 
-/* Module dependencies. */
 var test = require('tape');
 var labelable = require('./index.js');
 
-/* Tests. */
 test('labelable', function (t) {
   t.equal(labelable(), false, 'should return `false` without node');
 

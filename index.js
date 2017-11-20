@@ -1,6 +1,5 @@
 'use strict';
 
-/* Expose. */
 module.exports = labelable;
 
 /* Check whether a `node` is labelable:
