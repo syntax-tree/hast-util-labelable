@@ -8,19 +8,16 @@
     "html",
     "labelable"
   ],
-  "dependencies": {},
-  "files": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/syntax-tree/hast-util-labelable.git"
-  },
+  "repository": "syntax-tree/hast-util-labelable",
   "bugs": "https://github.com/syntax-tree/hast-util-labelable/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^14.0.0",
     "esmangle": "^1.0.1",
