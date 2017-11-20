@@ -41,6 +41,14 @@ Labelable nodes have a `tagName` set to `button`, `keygen`,
 `meter`, `output`, `progress`, `select`, `textarea`, and `input`
 (excluding `[type=hidden]`.
 
+## Contribute
+
+See [`contribute.md` in `syntax-tree/hast`][contribute] for ways to get
+started.
+
+This organisation has a [Code of Conduct][coc].  By interacting with this
+repository, organisation, or community you agree to abide by its terms.
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -66,3 +74,7 @@ Labelable nodes have a `tagName` set to `button`, `keygen`,
 [spec]: https://html.spec.whatwg.org/#category-label
 
 [node]: https://github.com/syntax-tree/unist#node
+
+[contribute]: https://github.com/syntax-tree/hast/blob/master/contributing.md
+
+[coc]: https://github.com/syntax-tree/hast/blob/master/code-of-conduct.md
