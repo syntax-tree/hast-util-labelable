@@ -13,17 +13,17 @@ npm install hast-util-labelable
 ## Usage
 
 ```javascript
-var labelable = require('hast-util-labelable');
+var labelable = require('hast-util-labelable')
 
-labelable({type: 'element', tagName: 'div'}); //=> false
+labelable({type: 'element', tagName: 'div'}) // => false
 
-labelable({type: 'element', tagName: 'input'}); //=> true
+labelable({type: 'element', tagName: 'input'}) // => true
 
 labelable({
   type: 'element',
   tagName: 'input',
   properties: {type: 'hidden'}
-}); //=> false
+}) // => false
 ```
 
 ## API
