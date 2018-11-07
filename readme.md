@@ -1,4 +1,4 @@
-# hast-util-labelable [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# hast-util-labelable [![Build][build-badge]][build] [![Coverage][coverage-badge]][coverage] [![Downloads][downloads-badge]][downloads] [![Chat][chat-badge]][chat]
 
 Check whether a [HAST node][hast] is [labelable][spec].
 
@@ -57,11 +57,19 @@ repository, organisation, or community you agree to abide by its terms.
 
 [build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-labelable.svg
 
-[build-page]: https://travis-ci.org/syntax-tree/hast-util-labelable
+[build]: https://travis-ci.org/syntax-tree/hast-util-labelable
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-labelable.svg
 
-[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-labelable?branch=master
+[coverage]: https://codecov.io/github/syntax-tree/hast-util-labelable
+
+[downloads-badge]: https://img.shields.io/npm/dm/hast-util-labelable.svg
+
+[downloads]: https://www.npmjs.com/package/hast-util-labelable
+
+[chat-badge]: https://img.shields.io/badge/join%20the%20community-on%20spectrum-7b16ff.svg
+
+[chat]: https://spectrum.chat/unified/rehype
 
 [npm]: https://docs.npmjs.com/cli/install
 
