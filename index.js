@@ -2,8 +2,8 @@
 
 module.exports = labelable
 
-/* Check whether a `node` is labelable:
- * https://html.spec.whatwg.org/#category-label */
+// Check whether a `node` is labelable:
+// See: <https://html.spec.whatwg.org/#category-label>.
 function labelable(node) {
   var name = node && node.type === 'element' && node.tagName
   var type = name && node.properties && node.properties.type
