@@ -1,18 +1,27 @@
-# hast-util-labelable [![Build][build-badge]][build] [![Coverage][coverage-badge]][coverage] [![Downloads][downloads-badge]][downloads] [![Chat][chat-badge]][chat]
+# hast-util-labelable
 
-Check whether a [HAST node][hast] is [labelable][spec].
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
+[![Sponsors][sponsors-badge]][collective]
+[![Backers][backers-badge]][collective]
+[![Chat][chat-badge]][chat]
 
-## Installation
+[**hast**][hast] utility to check if an [*element*][element] is
+[*labelable*][spec].
+
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install hast-util-labelable
 ```
 
 ## Usage
 
-```javascript
+```js
 var labelable = require('hast-util-labelable')
 
 labelable({type: 'element', tagName: 'div'}) // => false
@@ -30,24 +39,28 @@ labelable({
 
 ### `labelable(node)`
 
+Check if the given value is a [*labelable*][spec] [*element*][element].
+
 ###### Parameters
 
-*   `node` ([`Node`][node], optional) — Node to check.
+*   `node` (`*`, optional) — Value to check, probably [`Node`][node]
 
 ###### Returns
 
 `boolean` — Whether `node` is a labelable element.
 Labelable nodes have a `tagName` set to `button`, `keygen`,
 `meter`, `output`, `progress`, `select`, `textarea`, and `input`
-(excluding `[type=hidden]`.
+(excluding `[type=hidden]`).
 
 ## Contribute
 
-See [`contributing.md` in `syntax-tree/hast`][contributing] for ways to get
+See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
 started.
+See [`support.md`][support] for ways to get help.
 
-This organisation has a [Code of Conduct][coc].  By interacting with this
-repository, organisation, or community you agree to abide by its terms.
+This project has a [Code of Conduct][coc].
+By interacting with this repository, organisation, or community you agree to
+abide by its terms.
 
 ## License
 
@@ -67,9 +80,19 @@ repository, organisation, or community you agree to abide by its terms.
 
 [downloads]: https://www.npmjs.com/package/hast-util-labelable
 
+[size-badge]: https://img.shields.io/bundlephobia/minzip/hast-util-labelable.svg
+
+[size]: https://bundlephobia.com/result?p=hast-util-labelable
+
+[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+
+[backers-badge]: https://opencollective.com/unified/backers/badge.svg
+
+[collective]: https://opencollective.com/unified
+
 [chat-badge]: https://img.shields.io/badge/join%20the%20community-on%20spectrum-7b16ff.svg
 
-[chat]: https://spectrum.chat/unified/rehype
+[chat]: https://spectrum.chat/unified/syntax-tree
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -77,12 +100,16 @@ repository, organisation, or community you agree to abide by its terms.
 
 [author]: https://wooorm.com
 
-[hast]: https://github.com/syntax-tree/hast
+[contributing]: https://github.com/syntax-tree/.github/blob/master/contributing.md
+
+[support]: https://github.com/syntax-tree/.github/blob/master/support.md
+
+[coc]: https://github.com/syntax-tree/.github/blob/master/code-of-conduct.md
 
 [spec]: https://html.spec.whatwg.org/#category-label
 
-[node]: https://github.com/syntax-tree/unist#node
+[hast]: https://github.com/syntax-tree/hast
 
-[contributing]: https://github.com/syntax-tree/hast/blob/master/contributing.md
+[node]: https://github.com/syntax-tree/hast#nodes
 
-[coc]: https://github.com/syntax-tree/hast/blob/master/code-of-conduct.md
+[element]: https://github.com/syntax-tree/hast#element
