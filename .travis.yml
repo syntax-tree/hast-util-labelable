@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -9,7 +9,7 @@ deploy:
   api_key:
     secure: NXOTKe2okortoxBsObaqTm/Sv3znwsCug1WsSENVJAUPJ3sPkTAIeg/9Ok5FBmA5bbEB8uSfcVYd8qor30VxucgG+8W70Atbpp4Y73oDvWARvOKHUAld+qvZt7e2h1ds9TKKzJLwBRWdybr447YzM1bMiN4MBWUM4rkzXjxiNftwP9tyuqtXQ4Ou8T9+gMSQGxL8nx9zb5ptGEXVUcLoWCZio5oZnfb4lSFOT3HipWjgfSdA+klAg8cdXhDiu2mMADTd+qdQMOP3esXRKyjmFFRL8AAZMBw8o4c1LPKq6vVNnMVDKmWAnuFePRiS2DGZhd0wEYIfcX+XHhpkNJ1YS/QrZSCzy8LJ4npBzXTNNNJgSh/Wfq2EUNT4MzSrbDetPbQqX6hGBAHAtGFKzAQpIKGxd4nznTXE+s3kkSgePdkwMJ8001fMNp6njDmlUIUNTiVRpjZoj5OFLOgqoklsLqoKKLXP2ecQj6jaPQyA8+f14J4NsEPrRD5KvGWxWnSca9fUT+AHP7Z9Vwf9BiRLbwg33iPD5WsM1td623I0c6CdNCTNnrMH8ciNYS45OJ/Tzy/3MuCn1lzt+ezB6uG8qg0TVuEHMUJNgJOn4yei8fPCCsuboTC90EJ0yaXEjCiFW38YrFbCu+MGkEugGve+EmxKna7TGw+VA9YLKidq+3A=
   file:
-    - "hast-util-labelable.js"
-    - "hast-util-labelable.min.js"
+    - 'hast-util-labelable.js'
+    - 'hast-util-labelable.min.js'
   on:
     tags: true
