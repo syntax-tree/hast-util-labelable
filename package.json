@@ -1,10 +1,14 @@
 {
   "name": "hast-util-labelable",
   "version": "1.0.3",
-  "description": "Check whether a node is labelable",
+  "description": "hast utility to check whether a node is labelable",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "labelable"
   ],
