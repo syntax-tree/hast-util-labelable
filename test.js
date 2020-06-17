@@ -3,7 +3,7 @@
 var test = require('tape')
 var labelable = require('.')
 
-test('labelable', function(t) {
+test('labelable', function (t) {
   t.equal(labelable(), false, 'should return `false` without node')
 
   t.equal(

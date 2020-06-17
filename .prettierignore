@@ -1,3 +1,5 @@
 coverage/
 hast-util-labelable.js
 hast-util-labelable.min.js
+*.json
+*.md
