@@ -16,6 +16,6 @@ function labelable(node) {
       name === 'select' ||
       name === 'textarea' ||
       (name === 'input' &&
-        (name && node.properties && node.properties.type) !== 'hidden')
+        (node.properties && node.properties.type) !== 'hidden')
   )
 }
