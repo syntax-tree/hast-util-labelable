@@ -1,7 +1,15 @@
-// Check whether a `node` is labelable:
-// See: <https://html.spec.whatwg.org/#category-label>.
+/**
+ * Check whether a `node` is labelable:
+ * See: <https://html.spec.whatwg.org/#category-label>.
+ *
+ * @param {unknown} node
+ * @returns {boolean}
+ */
 export function labelable(node) {
-  var name = node && node.type === 'element' && node.tagName
+  /** @type {string} */
+  var name =
+    // @ts-ignore Looks like an object.
+    node && typeof node === 'object' && node.type === 'element' && node.tagName
 
   return Boolean(
     name === 'button' ||
@@ -12,6 +20,7 @@ export function labelable(node) {
       name === 'select' ||
       name === 'textarea' ||
       (name === 'input' &&
+        // @ts-ignore Looks like an object.
         (node.properties && node.properties.type) !== 'hidden')
   )
 }
