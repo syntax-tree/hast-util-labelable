@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-hast-util-labelable.js
-hast-util-labelable.min.js
 yarn.lock

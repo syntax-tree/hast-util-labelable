@@ -1,10 +1,6 @@
-'use strict'
-
-module.exports = labelable
-
 // Check whether a `node` is labelable:
 // See: <https://html.spec.whatwg.org/#category-label>.
-function labelable(node) {
+export function labelable(node) {
   var name = node && node.type === 'element' && node.tagName
 
   return Boolean(

@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var labelable = require('.')
+import test from 'tape'
+import {labelable} from './index.js'
 
 test('labelable', function (t) {
   t.equal(labelable(), false, 'should return `false` without node')
