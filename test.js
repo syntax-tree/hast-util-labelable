@@ -1,7 +1,7 @@
 import test from 'tape'
 import {labelable} from './index.js'
 
-test('labelable', function (t) {
+test('labelable', (t) => {
   t.equal(labelable(), false, 'should return `false` without node')
 
   t.equal(

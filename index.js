@@ -7,7 +7,7 @@
  */
 export function labelable(node) {
   /** @type {string} */
-  var name =
+  const name =
     // @ts-ignore Looks like an object.
     node && typeof node === 'object' && node.type === 'element' && node.tagName
 
