@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {labelable} from './index.js'
+import * as mod from './index.js'
 
 test('labelable', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['labelable'],
+    'should expose the public api'
+  )
+
   // @ts-expect-error: runtime.
   assert.equal(labelable(), false, 'should return `false` without node')
 
