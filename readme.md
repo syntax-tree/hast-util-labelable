@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is [*labelable*][spec].
+[hast][] utility to check if a node is a [*labelable element*][spec].
 
 ## Contents
 
@@ -38,7 +38,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-labelable
@@ -76,23 +76,24 @@ labelable({
 
 ## API
 
-This package exports the identifier `labelable`.
+This package exports the identifier [`labelable`][labelable].
 There is no default export.
 
 ### `labelable(node)`
 
-Check if the given value is a [*labelable*][spec] [*element*][element].
+Check if the given value is a [*labelable element*][spec].
 
 ###### Parameters
 
-*   `node` (`*`, optional) — Value to check, probably [`Node`][node]
+*   `node` ([`Node`][node])
+    — node to check (typically [`Element`][element])
 
 ###### Returns
 
 Whether `node` is a labelable element (`boolean`).
-Labelable nodes have a `tagName` set to `button`, `keygen`,
-`meter`, `output`, `progress`, `select`, `textarea`, and `input`
-(excluding `[type=hidden]`).
+
+Labelable elements are `button`, `keygen`, `meter`, `output`, `progress`,
+`select`, `textarea`, and `input` (excluding `[type=hidden]`).
 
 ## Types
 
@@ -103,7 +104,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Security
@@ -215,3 +216,5 @@ abide by its terms.
 [element]: https://github.com/syntax-tree/hast#element
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
+
+[labelable]: #labelablenode
