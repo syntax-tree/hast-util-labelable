@@ -1,14 +1,20 @@
 /**
  * @typedef {import('hast').Root} Root
- * @typedef {Root['children'][number]|Root} Node
+ * @typedef {import('hast').Content} Content
+ */
+
+/**
+ * @typedef {Content | Root} Node
  */
 
 /**
  * Check whether a `node` is labelable:
- * See: <https://html.spec.whatwg.org/#category-label>.
+ * See: <https://html.spec.whatwg.org/multipage/forms.html#category-label>.
  *
  * @param {Node} node
+ *   Node to check (typically `Element`).
  * @returns {boolean}
+ *   Whether `node` is a labelable element.
  */
 export function labelable(node) {
   return Boolean(

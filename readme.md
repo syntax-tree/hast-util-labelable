@@ -27,8 +27,8 @@
 
 ## What is this?
 
-This package is a small utility that checks if a node is labelable according to
-HTML.
+This package is a small utility that checks if a node is a labelable element
+according to HTML.
 
 ## When should I use this?
 
@@ -206,7 +206,7 @@ abide by its terms.
 
 [coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
-[spec]: https://html.spec.whatwg.org/#category-label
+[spec]: https://html.spec.whatwg.org/multipage/forms.html#category-label
 
 [hast]: https://github.com/syntax-tree/hast
 
