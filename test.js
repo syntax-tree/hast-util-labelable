@@ -1,29 +1,30 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {labelable} from './index.js'
 
-test('labelable', (t) => {
+test('labelable', () => {
   // @ts-expect-error: runtime.
-  t.equal(labelable(), false, 'should return `false` without node')
+  assert.equal(labelable(), false, 'should return `false` without node')
 
-  t.equal(
+  assert.equal(
     labelable({type: 'text', value: 'Alpha'}),
     false,
     'should return `false` without element'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'div', children: []}),
     false,
     'should return `false` for non-labelable elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'input', children: []}),
     true,
     'should return `true` for `input` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({
       type: 'element',
       tagName: 'input',
@@ -34,47 +35,45 @@ test('labelable', (t) => {
     'should return `false` for `input[type=hidden]` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'button', children: []}),
     true,
     'should return `true` for `button` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'keygen', children: []}),
     true,
     'should return `true` for `keygen` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'meter', children: []}),
     true,
     'should return `true` for `meter` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'output', children: []}),
     true,
     'should return `true` for `output` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'progress', children: []}),
     true,
     'should return `true` for `progress` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'select', children: []}),
     true,
     'should return `true` for `select` elements'
   )
 
-  t.equal(
+  assert.equal(
     labelable({type: 'element', tagName: 'textarea', children: []}),
     true,
     'should return `true` for `textarea` elements'
   )
-
-  t.end()
 })
