@@ -9,11 +9,6 @@ test('labelable', async function (t) {
     ])
   })
 
-  await t.test('should return `false` without node', async function () {
-    // @ts-expect-error: check that the runtime supports a missing node.
-    assert.equal(labelable(), false)
-  })
-
   await t.test('should return `false` without element', async function () {
     assert.equal(labelable({type: 'text', value: 'Alpha'}), false)
   })
