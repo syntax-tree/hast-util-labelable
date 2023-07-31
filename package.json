@@ -1,6 +1,6 @@
 {
   "name": "hast-util-labelable",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "hast utility to check whether a node is labelable",
   "license": "MIT",
   "keywords": [

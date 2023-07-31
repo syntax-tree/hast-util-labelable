@@ -47,14 +47,14 @@ npm install hast-util-labelable
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {labelable} from 'https://esm.sh/hast-util-labelable@2'
+import {labelable} from 'https://esm.sh/hast-util-labelable@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {labelable} from 'https://esm.sh/hast-util-labelable@2?bundle'
+  import {labelable} from 'https://esm.sh/hast-util-labelable@3?bundle'
 </script>
 ```
 
