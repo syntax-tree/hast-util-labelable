@@ -38,7 +38,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 14.14+ and 16.0+), install with [npm][]:
+In Node.js (version 16+), install with [npm][]:
 
 ```sh
 npm install hast-util-labelable
@@ -63,20 +63,21 @@ In browsers with [`esm.sh`][esmsh]:
 ```js
 import {labelable} from 'hast-util-labelable'
 
-labelable({type: 'element', tagName: 'div'}) // => false
+labelable({type: 'element', tagName: 'div', properties: {}, children: []}) // => false
 
-labelable({type: 'element', tagName: 'input'}) // => true
+labelable({type: 'element', tagName: 'input', properties: {}, children: []}) // => true
 
 labelable({
   type: 'element',
   tagName: 'input',
-  properties: {type: 'hidden'}
+  properties: {type: 'hidden'},
+  children: []
 }) // => false
 ```
 
 ## API
 
-This package exports the identifier [`labelable`][labelable].
+This package exports the identifier [`labelable`][api-labelable].
 There is no default export.
 
 ### `labelable(node)`
@@ -92,8 +93,8 @@ Check if the given value is a [*labelable element*][spec].
 
 Whether `node` is a labelable element (`boolean`).
 
-Labelable elements are `button`, `keygen`, `meter`, `output`, `progress`,
-`select`, `textarea`, and `input` (excluding `[type=hidden]`).
+Labelable elements are `button`, `input` (excluding `[type=hidden]`), `keygen`,
+`meter`, `output`, `progress`, `select`, and `textarea`.
 
 ## Types
 
@@ -102,10 +103,13 @@ It exports no additional types.
 
 ## Compatibility
 
-Projects maintained by the unified collective are compatible with all maintained
+Projects maintained by the unified collective are compatible with maintained
 versions of Node.js.
-As of now, that is Node.js 14.14+ and 16.0+.
-Our projects sometimes work with older versions, but this is not guaranteed.
+
+When we cut a new major release, we drop support for unmaintained versions of
+Node.
+This means we try to keep the current release line, `hast-util-labelable@^2`,
+compatible with Node.js 12.
 
 ## Security
 
@@ -173,9 +177,9 @@ abide by its terms.
 
 [downloads]: https://www.npmjs.com/package/hast-util-labelable
 
-[size-badge]: https://img.shields.io/bundlephobia/minzip/hast-util-labelable.svg
+[size-badge]: https://img.shields.io/badge/dynamic/json?label=minzipped%20size&query=$.size.compressedSize&url=https://deno.bundlejs.com/?q=hast-util-labelable
 
-[size]: https://bundlephobia.com/result?p=hast-util-labelable
+[size]: https://bundlejs.com/?q=hast-util-labelable
 
 [sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
 
@@ -217,4 +221,4 @@ abide by its terms.
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
 
-[labelable]: #labelablenode
+[api-labelable]: #labelablenode
