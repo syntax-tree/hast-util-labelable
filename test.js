@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {labelable} from './index.js'
+import {labelable} from 'hast-util-labelable'
 
 test('labelable', async function (t) {
   await t.test('should expose the public api', async function () {
-    assert.deepEqual(Object.keys(await import('./index.js')).sort(), [
+    assert.deepEqual(Object.keys(await import('hast-util-labelable')).sort(), [
       'labelable'
     ])
   })
