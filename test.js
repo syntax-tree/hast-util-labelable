@@ -20,13 +20,18 @@ test('labelable', () => {
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'div', children: []}),
+    labelable({type: 'element', tagName: 'div', properties: {}, children: []}),
     false,
     'should return `false` for non-labelable elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'input', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'input',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `input` elements'
   )
@@ -43,43 +48,78 @@ test('labelable', () => {
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'button', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'button',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `button` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'keygen', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'keygen',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `keygen` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'meter', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'meter',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `meter` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'output', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'output',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `output` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'progress', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'progress',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `progress` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'select', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'select',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `select` elements'
   )
 
   assert.equal(
-    labelable({type: 'element', tagName: 'textarea', children: []}),
+    labelable({
+      type: 'element',
+      tagName: 'textarea',
+      properties: {},
+      children: []
+    }),
     true,
     'should return `true` for `textarea` elements'
   )
